@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <meta name="description" content="당산 유흥 가이드 블로그: 형님들이 진짜 궁금해하는 당산 유흥 정보. 전화 010-6279-0862">
+    <meta name="keywords" content="당산 유흥, 당산 유흥 가이드, 당산 술집, 당산 밤문화, 당산 회식, 당산 놀거리, 당산 블로그, 당산 유흥 정보">
+    <link rel="canonical" href="https://t3b08-ds-night-guide-1.vercel.app/blog">
+    <meta property="og:title" content="당산 유흥 가이드 블로그 - 형님들을 위한 진짜 이야기">
+    <meta property="og:description" content="당산에서 제대로 놀고 싶은 형님들, 여기서 정보 얻어가세요. 진짜 경험담과 꿀팁 대방출.">
+    <meta property="og:url" content="https://t3b08-ds-night-guide-1.vercel.app/blog">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="당산 유흥 가이드 블로그 - 형님들을 위한 진짜 이야기">
+    <meta name="twitter:description" content="당산에서 제대로 놀고 싶은 형님들, 여기서 정보 얻어가세요. 진짜 경험담과 꿀팁 대방출.">
+    <title>당산 유흥 가이드 블로그 - 형님들을 위한 진짜 이야기</title>
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #faf8f5;
+            color: #1d1d1f;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        a {
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+        /* Header & Navigation */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+        .logo a {
+            color: #1d1d1f;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #555;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+        nav a:hover {
+            color: #1d1d1f;
+            border-bottom-color: #1d1d1f;
+        }
+        nav a.active {
+            color: #1d1d1f;
+            border-bottom-color: #1d1d1f;
+        }
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: #1d1d1f;
+            color: #fff !important;
+            padding: 8px 18px !important;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: none !important;
+            transition: background-color 0.2s ease;
+        }
+        .tel-link:hover {
+            background-color: #333;
+            opacity: 1 !important;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #1d1d1f;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #faf8f5 0%, #f0ece6 100%);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        /* Blog Post */
+        .blog-post {
+            padding: 60px 0;
+        }
+        .blog-post .container {
+            max-width: 800px;
+        }
+        .blog-post .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        .blog-post .post-meta .author {
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+        .blog-post .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            background-color: #e5e5e5;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 1rem;
+        }
+        .blog-post h2 {
+            margin-top: 40px;
+        }
+        .blog-post h3 {
+            margin-top: 28px;
+        }
+        .blog-post p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .blog-post ul, .blog-post ol {
+            margin: 16px 0 24px 24px;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #333;
+        }
+        .blog-post blockquote {
+            border-left: 4px solid #1d1d1f;
+            padding: 16px 24px;
+            margin: 24px 0;
+            background-color: #f0ece6;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+        .blog-post .tip-box {
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .blog-post .tip-box h4 {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        .cta-section {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #f0ece6;
+            margin-top: 40px;
+        }
+        .cta-section h2 {
+            margin-bottom: 16px;
+        }
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto 24px;
+            font-size: 1.1rem;
+        }
+        .cta-section .tel-link {
+            font-size: 1.1rem;
+            padding: 12px 28px !important;
+        }
+        /* Footer */
+        footer {
+            background-color: #1d1d1f;
+            color: #aaa;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #ccc;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+        /* Responsive 768px */
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #fff;
+                flex-direction: column;
+                padding: 16px 24px;
+                border-bottom: 1px solid #e5e5e5;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                gap: 12px;
+            }
+            nav.open {
+                display: flex;
+            }
+            nav a {
+                padding: 8px 0;
+                border-bottom: none;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .header-inner {
+                padding: 12px 16px;
+            }
+            .container {
+                padding: 0 16px;
+            }
+            .blog-post .featured-image {
+                aspect-ratio: 4/3;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo"><a href="/">당산 유흥 가이드</a></div>
+            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('nav').classList.toggle('open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/blog" class="active">블로그</a>
+                <a href="/about">소개</a>
+                <a href="/contact" class="tel-link">📞 010-6279-0862</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>형님들을 위한 진짜 이야기</h1>
+            <p>당산에서 밤 보내는 법, 진짜 경험담과 꿀팁을 가감 없이 풀어드립니다. 술자리부터 뒷풀이까지, 이거 하나면 끝.</p>
+        </div>
+    </section>
+
+    <section class="blog-post">
+        <div class="container">
+            <article>
+                <div class="post-meta">
+                    <span class="author">당산 형님</span>
+                    <span>·</span>
+                    <span>2025년 3월 15일</span>
+                    <span>·</span>
+                    <span>8분 읽기</span>
+                </div>
+                <h1>당산에서 진짜로 노는 법: 형님들이 알려주는 현실 유흥 꿀팁</h1>
+                <div class="featured-image">📸 당산 야경 사진 (예시 이미지)</div>
+
+                <p>야, 형. 당산에서 한 번 제대로 놀아보고 싶은데 막상 가면 어디로 가야 할지 막막하다고? 맞아, 나도 처음엔 그랬어. 여기저기 물어보고 다녔지만, 진짜 꿀팁은 아무도 안 알려주더라고. 그래서 내가 직접 부딪히고 경험한 당산 유흥의 모든 걸 풀어볼게. 형 취향에 딱 맞는 코스, 지금부터 시작한다.</p>
+
+                <h2>왜 하필 당산인가?</h2>
+                <p>솔직히 말해서, 당산은 강남처럼 번쩍이지 않아. 근데 그게 매력이야. 사람들 북적북적하지 않고, 가게들도 오래된 맛집 같은 분위기. 술자리도 부담 없고, 회식하기 딱 좋아. 게다가 교통도 편해서 집에 갈 때 스트레스 덜 받는다는 게 큰 장점이지. 나 같은 경우는 회식 장소로 당산을 자주 쓰는데, 형들도 한 번 경험해보면 왜 당산인지 알게 될 거야.</p>
+
+                <h2>첫 코스: 분위기 좋은 술집 고르는 법</h2>
+                <p>당산에서 술집 고를 때 가장 중요한 건 '분위기'야. 너무 시끄러운 곳은 피하고, 대화가 가능한 정도의 음악이 흐르는 곳이 좋아. 내가 자주 가는 곳은 <strong>역전할머니맥주</strong>랑 비슷한 스타일의 포차인데, 거긴 안주도 푸짐하고 사장님이 인심도 좋아. 형이 처음이면, 일단 사람 많은 곳보다는 현지인들이 추천하는 작은 가게를 골라봐. 네이버 평점 4점 이상이면 보통 괜찮더라고.</p>
+
+                <blockquote>
+                    "처음 당산 왔을 때는 아무 데나 들어갔다가 후회했는데, 지금은 단골집 세 군데는 기본으로 돌아요. 형도 시간 날 때 한번 가보세요." — 당산 단골 손님
+                </blockquote>
+
+                <h2>두 번째 코스: 회식 자리에서 빛나는 팁</h2>
+                <p>회식 자리에서 중요한 건 분위기와 안주야. 당산에는 <strong>곱창</strong>이나 <strong>닭볶음탕</strong> 같은 안주가 강한 집이 많아. 특히 '당산곱창'이라는 곳은 진짜 소문난 맛집인데, 거기 가면 술이 술술 들어가. 형, 회식 자리에서는 무조건 안주부터 챙겨야 해. 그래야 다음 날 후회가 덜하더라고. 그리고 꿀팁 하나: 회식비는 미리 정산하는 게 정신 건강에 좋아. 내가 당한 적이 있어서 아는 소리야.</p>
+
+                <div class="tip-box">
+                    <h4>💡 형님 필독 꿀팁</h4>
+                    <p>당산에서 술 마실 때는 <strong>2차 코스</strong>를 미리 정해두는 게 좋아. 보통 1차에서 가볍게 시작하고, 2차는 노래방이나 포장마차에서 마무리하는 패턴이 제일 인기야. 특히 당산역 3번 출구 쪽에 포장마차 골목이 있는데, 거기 분위기가 끝내줘. 형, 한 번 가보면 내 말이 무슨 뜻인지 알게 될 거야.</p>
+                </div>
+
+                <h2>세 번째 코스: 뒷풀이까지 완벽하게</h2>
+                <p>술자리 끝나고 집에 바로 가면 섭섭하지, 그치? 당산에는 24시까지 하는 <strong>감자탕</strong> 집이나 <strong>칼국수</strong> 집이 있어서 속 풀기 딱이야. 내가 자주 가는 곳은 '당산해장국'인데, 거기서 해장하면 다음 날 개운함이 장난 아니야. 형, 술자리에서 중요한 건 시작도 중요하지만 마무리가 진짜 중요해. 뒷풀이까지 챙기면 형님들 사이에서 인싸 될 자신 있어.</p>
+
+                <h2>진짜 형들을 위한 마지막 조언</h2>
+                <p>자, 형. 이제 당산에서 어떻게 놀아야 할지 감 좀 왔지? 처음에는 낯설어도 한두 번 다녀보면 금방 익숙해져. 중요한 건 <strong>무리하지 말고
+</body>
+</html>
